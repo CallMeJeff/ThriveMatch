@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <div class="row bg-white">
+      <img src="assets/images/logothrivematch1.png" class="logothrivematch1" />
+    </div>
+  <!-- head -->
+  <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+    <div class="panel border bg-white">
+      <div class="panel-heading text-center mb-10">
+        <h2 class="pt-4 font weight-bold">WELCOME BACK</h2>
+      </div>
+      <!-- body -->
+      <div class="panel-body p-3">
+        <form [formGroup]="LogInForm" (ngSubmit)="onSubmit()" >
+          <div class="row">
+            <div class="input-field"  [class.error]="LogInForm.controls['email'].dirty && LogInForm.hasError('required','email')" >
+              <input
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Email Address "
+                formControlName="email"
+                required>
+            </div>
+            <small *ngIf="LogInForm.controls['email'].dirty && LogInForm.hasError('required','email')"
+            class="text-danger">*Email is required </small>
+            <br />
+
+            <div class="input-field"
+            [class.error]="LogInForm.controls['password'].dirty && LogInForm.hasError('required','password')">
+              <input [type]="type"
+              name="password"
+              placeholder="Password"
+              formControlName="password"
+              required>
+              <span
+                (click)="hideShowPass()"
+                class="fa {{ eyeIcon }}"
+              ></span>
+            </div>
+              <small *ngIf="LogInForm.controls['password'].dirty && LogInForm.hasError('required','password')"
+              class="text-danger">*Password is required </small>
+            <br>
+
+            <div class="fr mt-4 text-center">
+              <a id="forgot" class="font-weight-bold"> forgot your Password?</a>
+            </div>
+              <button
+                type="submit"
+                value="submit"
+                class="btn btn-primary btn-block mt-4 w-100">
+                LogIn
+              </button>
+            <div class="text-center pt-4 text-muted">
+              Don't have an account?
+              <a routerLink="/signup">SignUp</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

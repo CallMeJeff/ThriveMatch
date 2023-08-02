@@ -1,0 +1,62 @@
+<section>
+  <nav class="navbar navbar-expand-lg text-white">
+    <div class="container-fluid">
+      <img src="assets/images/logothrivematch1.png" class="logothrivematch1" />
+      <button class="navbar-toggler" type="button" style="background-color:transparent; box-shadow:none;"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            ThriveMatch
+          </h5>
+          <button type="button" class="btn-close  shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="links d-flex flex-column flex-lg-row p-4">
+          <ul class="navbar-nav justify-content-center  align-items-center fs-5 flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"
+              routerLinkActive="active-link"
+              routerLink="/homepage" >Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a routerLink="/investorspage" routerLinkActive="active-link">Investor <i class='fas fa-donate' style='font-size:20px;'></i> </a>
+                <div class="dropdown-content">
+                  <a href="#">Explore </a>
+                  <a href="#">Search </a>
+                  <a href="#">News feed</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+              <a routerLink="/startuppage" routerLinkActive="active-link"> Entreprenuer
+                <i class='fas fa-hand-holding-usd' style='font-size:20px;'></i>
+              </a>
+              <div class="dropdown-content">
+                <a  routerLink="/startuppage">My pitches </a>
+                <a href="#">my Investors </a>
+                <a href="#">Add a pitch 3</a>
+              </div>
+            </div>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+
+            <div class="dropdown pt-2">
+              <span> <i class='fas fa-user-circle' style='font-size:48px;color:rgb(88, 200, 237);'></i></span>
+          <div class="dropdown-content">
+            <a routerLink="/mymatches">My Matches</a>
+            <a href="#">Account</a>
+            <a href="#">documents</a>
+            <a (click)="signOut()">Sign Out</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div></nav>
+</section>

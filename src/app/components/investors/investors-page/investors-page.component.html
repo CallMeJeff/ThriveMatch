@@ -1,0 +1,188 @@
+<!--
+ <section>
+    <nav>
+        <div style="background-color:white;">
+          <div class="row pb-4">
+            <div class="col pt-3">
+              <img src="assets/images/logothrivematch1.png" class="logothrivematch1" />
+            </div>
+            <div class="col pt-3">
+              <div class="links pt-4 ">
+                <div class="dropdown">
+                  <a routerLink="/homepage">Home </a>
+                </div>
+                <div class="dropdown">
+                  <a routerLink="/investorspage">Investor <i class='fas fa-donate' style='font-size:20px;'></i> </a>
+                  <div class="dropdown-content">
+                    <a href="#">Explore </a>
+                    <a href="#">Search </a>
+                    <a href="#">News feed</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a routerLink="/startuppage"> Entreprenuer
+                    <i class='fas fa-hand-holding-usd' style='font-size:20px;'></i>
+                  </a>
+                  <div class="dropdown-content">
+                    <a href="#">My pitches 1</a>
+                    <a href="#">my Investors 2</a>
+                    <a href="#">Add a pitch 3</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <a href="#messages">Messages <i class='far fa-comment-alt' style='font-size:20px;'></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">Chats </a>
+                    <a href="#">Unread Messages</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" col-auto pe-3">
+              <div class="dropdown pt-2">
+                    <span> <i class='fas fa-user-circle' style='font-size:48px;color:rgb(88, 200, 237);'></i></span>
+                <div class="dropdown-content">
+                  <a href="#"> My Matches </a>
+                  <a href="#">Account</a>
+                  <a (click)="signOut()">Sign Out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <hr>
+  </section> -->
+  <app-header></app-header>
+  <section>
+    <div class="row text-center pb-3">
+      <h2 style="text-align: center;padding-bottom: 10px; ">Investor</h2>
+      <span>Join the investing Revolution:Be a part of something Big </span>
+    </div>
+    <div class="registration" style="padding-left: 10px; padding-bottom: 20px;">
+      <div class="row">
+        <div class="registration d-flex justify-content-center align-items-center">
+          <div class="col">
+            <!-- icon -->
+            <img src="assets/images/iconsregister.png">
+
+            <h4>Register</h4>
+            <span>Join the world's largest ThriveMatch network. We have over 200k+ active investor globally</span>
+          </div>
+          <div class="col">
+            <!-- icon -->
+            <img src="assets/images/iconspeople.png">
+
+            <h4>Connect With Entreprenuer</h4>
+            <span>Browse and search Opportunities by location,industry and investment size to find the right deal for
+              you</span>
+          </div>
+          <div class="col ">
+            <!-- icon -->
+            <img src="assets/images/iconscrowdfunding.png">
+            <!--  -->
+            <h4>Invest</h4>
+            <span>Manage and message thousands of entreprenuers directly through your own private dashboard</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2 col-4 mx-auto pt-4">
+        <button class="btn  btn-primary" type="button" (click)="scrollToinvestorSetup()">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <body >
+    <!-- account setup -->
+    <section id="investorSetup" style=" background-color:#72CBF6">
+      <div class="row">
+        <div class="col-5" style="display: flex; justify-content: center; align-items: center;">
+          <span style="text-align: center;">
+            <h2>Let's begin your Investment Journey !</h2>
+            <span>
+              We're here to guide you every step of the way
+            </span>
+          </span>
+        </div>
+        <div class="col-7 ">
+          <form [formGroup]="investorsForm"  class="investorsform" style="text-align: center;" enctype="multipart/form-data">
+            <div class="title text-center ">
+              <h1>Tell Us About Yourself</h1>
+            </div>
+            <div class=" circular-file-input col-12 pb-4"  placeholder="choose picture"  >
+              <input type="file" id="image"
+              (change)="onFileChange($event)">
+              <label class=" pb-3"> <b>Profile Photo</b></label>
+            </div>
+            <br>
+            <label> <b>What kind of investor are you?</b></label>
+            <select class="form-select" aria-label="Default select example" placeholder="InvestorType" required>
+              <!-- <option selected>Investor type</option> -->
+              <option value="1">Individual investor</option>
+              <option value="2">Investing Company </option>
+            </select>
+            <br>
+            <div class="input-field">
+              <label> <b>Name or Company Name</b></label>
+              <br>
+              <input id="CompanyName" type="text" placeholder="Name or Company Name " formControlName="name"
+                style="padding: 14px; " required />
+            </div>
+            <br>
+            <div class="input-field">
+              <label> <b>Email</b></label>
+              <br>
+              <input id="Email" type="text" placeholder="Email"formControlName="email"
+                style="padding: 14px; " required />
+            </div>
+            <br>
+            <div class="input-field">
+              <label> <b>Address</b></label>
+              <br>
+              <input id="address" type="text" placeholder=" address " formControlName="address"
+                style="padding: 14px; " required />
+            </div>
+            <br>
+            <div class="categories">
+              <label><b>What Industries are you interested in</b></label>
+              <div class="input-field">
+                <select class="form-select" aria-label="Default select example" placeholder="InvestorType"
+                formControlName="industry"
+                 required>
+                  <option selected>Choose</option>
+                  <option value="1">software</option>
+                  <option value="2">Art and Culture </option>
+                  <option value="3">Property</option>
+                  <option value="4">Manufacturing and Engineering</option>
+                  <option value="5">Agriculture</option>
+                  <option value="6">Medicine and sciences</option>
+                  <option value="7">Energy</option>
+                  <option value="8">Finance</option>
+                  <option value="9">Media</option>
+                  <option value="10">Technology</option>
+                  <option value="11">Education</option>
+                  <option value="12">Gaming</option>
+                </select>
+              </div>
+            </div>
+            <br>
+            <div class="input-field">
+              <label> <b>Talk About your Interests</b>
+              </label>
+              <br>
+              <textarea name="description"
+              id="description"
+               cols="40" rows="7"
+              placeholder="Description"
+              formControlName="desc"
+                style="width: 100%; height: 150px; resize: vertical;"></textarea>
+            </div>
+            <button  routerLink="/investorshomepage" class="btn btn-primary" type="button" (click)="onSubmit()" >Register</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+<!-- footer -->
+<app-footer></app-footer>
+

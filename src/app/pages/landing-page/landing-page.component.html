@@ -1,0 +1,788 @@
+<!-- navbar -->
+<section>
+  <nav class="navbar navbar-expand-lg text-white">
+    <div class="container-fluid">
+      <img src="assets/images/logothrivematch1.png" class="logothrivematch1" />
+      <button class="navbar-toggler" type="button" style="background-color:transparent; box-shadow:none;"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            ThriveMatch
+          </h5>
+          <button type="button" class="btn-close  shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="links d-flex flex-column flex-lg-row p-4">
+          <ul class="navbar-nav justify-content-center  align-items-center fs-5 flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a routerLink="/investorspage" routerLinkActive="active-link">Investor <i class='fas fa-donate' style='font-size:20px;'></i> </a>
+                <div class="dropdown-content">
+                  <a routerLink="/investorspage">Explore </a>
+                  <a href="#">Search </a>
+                  <a href="#">News feed</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <div class="dropdown">
+              <a routerLink="/startuppage" routerLinkActive="active-link"> Entreprenuer
+                <i class='fas fa-hand-holding-usd' style='font-size:20px;'></i>
+              </a>
+              <div class="dropdown-content">
+                <a  routerLink="/startuppage">My pitches </a>
+                <a href="#">my Investors </a>
+                <a href="#">Add a pitch 3</a>
+              </div>
+            </div>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            <a routerLink="login">Log In</a>
+            <button routerLink="signup" class="text-decoration-none px-3 py-1 rounded"
+              style="background-color:#72CBF6; outline: none; ">
+              Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+<!-- body -->
+<div class=" img-background row">
+  <div class="text-center pt-4 mt-4 ">
+    <div class="image-text">
+      <h1 class="mb-4">
+        Investor-Entreprenuer
+        <br>MatchMaking
+      </h1>
+      <h4 style="display: inline-block;">
+        Connecting startups with investors where great business and great peaple meet.
+        <br>Looking for investment and
+        investors with
+        <br> capital,contacts and knowledge to help them succeed
+      </h4>
+      <div class="col pb-2">
+        </div>
+        <button routerLink="/login" type="button" class="btn btn-primary btn-lg">Get Started </button>
+      </div>
+    </div>
+  </div>
+
+<body>
+  <!-- trending -->
+  <div id="carouselExampleIndicators1" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1680087006074-b615c3108bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8eGpQUjRobGtCR0F8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1689198163336-c18bbdec27dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 8</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1603008211659-dfa24ae98e15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8YkRvNDhjVWh3bll8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 9</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 10</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 11</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1628348070889-cb656235b4eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVkaWNhbCUyMGNhcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 12</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div id="carouselExampleIndicators2" class="carousel slide">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1680087006074-b615c3108bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8eGpQUjRobGtCR0F8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 4</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 5</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 6</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1689198163336-c18bbdec27dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 7</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 8</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1603008211659-dfa24ae98e15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8YkRvNDhjVWh3bll8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 9</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 10</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1536604673810-81370412626d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 11</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="card d-none d-md-block">
+            <img
+              src="https://images.unsplash.com/photo-1628348070889-cb656235b4eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVkaWNhbCUyMGNhcmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title 12</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-hand-thumbs-up"></i>
+                Interested</button>
+              <button type="button" class="btn btn-outline-danger btn-sm">Dismiss
+                <i class="bi bi-hand-thumbs-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- industries -->
+  <section class="mt-4 industry">
+    <div class="container-fluid">
+      <h2 class="text-center pb-3">Popular Industries</h2>
+      <div class="image-container">
+        <div class="row text-center">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="image-text">
+              <h3>Food and Beverage</h3>
+            </div>
+            <img src="/assets/images/food and beverage.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="image-text">
+              <h3>Software</h3>
+            </div>
+            <img src="/assets/images/software.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="image-text">
+              <h3>Art & culture</h3>
+            </div>
+            <img src="/assets/images/art and culture.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="image-text">
+              <h3>Property</h3>
+            </div>
+            <img src="/assets/images/property.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="image-text">
+              <h3>Manufacturing & Engineering</h3>
+            </div>
+            <img src="/assets/images/manufacturing and engineering.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="image-text">
+              <h3>Technology</h3>
+            </div>
+            <img src="/assets/images/technology.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="image-text">
+              <h3>Medicine & sciences</h3>
+            </div>
+            <img src="/assets/images/medicine and sciences.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="image-text">
+              <h3>Agriculture</h3>
+            </div>
+            <img src="/assets/images/agriculture.avif" class="img-industry" />
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="image-text">
+              <h3>Energy</h3>
+            </div>
+            <img src="/assets/images/energy.avif" class="img-industry" />
+          </div>
+          <!-- additional content -->
+
+          <div [hidden]="!showMoreContent">
+            <div class="row text-center">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="image-text">
+                  <h3>Finance</h3>
+                </div>
+                <img src="/assets/images/finance.avif" class="img-industry" />
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="image-text">
+                  <h3>Media</h3>
+                </div>
+                <img src="/assets/images/media.avif" class="img-industry" />
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 ">
+                <div class="image-text">
+                  <h3>Education</h3>
+                </div>
+                <img src="/assets/images/education.avif" class="img-industry" />
+              </div>
+            </div>
+          </div>
+          <a (click)="toggleShowMore()" class="show-more-link">{{ showMoreText }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="service mt-5">
+  <div class="container pb-5">
+    <h2 class="text-center text-white pt-3" id="service">Our Services</h2>
+    <p class="lead text-center mb-4 text-white">
+      What would ThriveMatch do for you?
+    </p>
+
+    <div class="row g-4">
+      <div class="col">
+        <div class="flex-fill" id="services">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">
+              Connect with Elite Investors and Startups
+            </h3>
+            <p class="card-text">
+              We provide a curated list of investors and start-ups for business
+              seeking funding,increasing the likelihood of successful
+              partnership
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="flex-fill" id="services">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">MatchMaking and Networking</h3>
+            <p class="card-text">
+              Avail cards with detailed Informations about investors and
+              start-ups,helping you make informed decisions in the world of
+              business
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col">
+        <div class="flex-fill" id="services">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">Portfolio Management</h3>
+            <p class="card-text">
+              Investors are able to track their investments ,monitor perfomance
+              and receive updates form their invested start-ups
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="flex-fill" id="services">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">Instant Communication</h3>
+            <p class="card-text">
+              Our Live chat services offers personalized communication channel
+              allowing startups and investors to engage with potentials clients
+              establishing relationships
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Feedback -->
+  <section>
+    <div class="container pb-3">
+      <h2 class="text-center text-dark">What our clients have to say</h2>
+      <p class="lead text-center mb-5 text-dark">
+        We help investors and entrepreneurs build lasting and profitable relationships.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBwaG90byUyMHJpaGFubmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                alt="display_picture" />
+              <h3 class="card-title mb-3">John Doe</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                commodi molestias voluptatibus recusandae molestiae ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://images.unsplash.com/photo-1513152697235-fe74c283646a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                alt="display_picture" />
+              <h3 class="card-title mb-3">John Doe2</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                commodi molestias voluptatibus recusandae molestiae ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                alt="display_picture" />
+              <h3 class="card-title mb-3">John Doe3</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                commodi molestias voluptatibus recusandae molestiae ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                alt="display_picture" />
+              <h3 class="card-title mb-3 ">John Doe4</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                commodi molestias voluptatibus recusandae molestiae ipsam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<!-- footer -->
+<app-footer></app-footer>
+

@@ -1,0 +1,50 @@
+// .outer{
+//   height: 100vh;
+//   background:#c9c9ff 50%;
+// }
+
+
+.logothrivematch1{
+  height: 100px;
+  max-width: 250px;
+  margin-top: 1px;
+}
+.input-field{
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  color: #4343ff;
+  margin-bottom: 9px;
+}
+.input-field.error{
+   border: 1px solid red;
+  color: red;
+  text-decoration: none;
+}
+input[type='text'],
+input[type='password']{
+  border:none;
+  outline:none;
+  box-shadow: none;
+  width: 100%;
+}
+.btn{
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#forgot{
+  min-width: 100px;
+  margin-left: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+.icongoogle{
+  height: 50px;
+  width: 50px;
+}

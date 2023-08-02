@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": ["https://spring-thrivematch.calmwater-2978c172.eastus.azurecontainerapps.io",""],
+    "secure": false,
+    "pathRewrite": {"^/api":""}
+}
+}

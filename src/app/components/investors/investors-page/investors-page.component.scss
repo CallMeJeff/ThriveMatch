@@ -1,0 +1,153 @@
+.logothrivematch1 {
+  height: auto;
+  max-width: 200px;
+  margin-top: 1px;
+}
+.navbar a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+  padding: auto;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+  transition: border-bottom 0.3s;
+}
+.links :hover {
+  color: rgb(62, 236, 114);
+}
+.active-link {
+  color: rgb(62, 187, 236);
+  font-weight: bold;
+}
+.active-link:active {
+  color: rgb(62, 236, 114);
+}
+h4 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.list li {
+  margin-bottom: 40px;
+}
+form {
+  width: 100%;
+  margin-right: 0;
+  display: inline-block;
+}
+
+.investorsform {
+  border: 1px solid #ccc;
+  padding: 20px;
+  //margin-left: 20px;
+  width: 100%;
+  border-radius: 5%;
+  background-color: white;
+  box-sizing: border-box;
+  right: 0;
+}
+.profilebtn {
+  width: 100px; /* Adjust the width and height as needed */
+  height: 100px;
+  border-radius: 50%; /* Makes the button circular */
+  border: none; /* Removes the default button border */
+  background-color: #e0e0e0; /* Set the background color */
+  color: #ffffff; /* Set the text color */
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-left: 20px;
+}
+
+.profilebtn:hover {
+  background-color: #a0a0a0; /* Set the background color on hover */
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  // background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(62, 236, 114);
+}
+.circular-file-input {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e5e5e5; /* Set a background color for the circular area */
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Make the actual input element transparent */
+    cursor: pointer;
+  }
+
+  /* Add additional styling for when the user hovers over the circular area */
+  &:hover {
+    background-color: #248cd664; /* Change the background color on hover */
+  }
+
+  /* Add additional styling for when the user selects a file */
+  // &.selected {
+  //   /* Add styles to indicate that a file has been selected */
+  // }
+
+  .input-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between input fields as needed */
+  }
+
+  .input-container input {
+    flex: 1; /* This will make all input fields take equal width */
+    padding: 10px;
+  }}
